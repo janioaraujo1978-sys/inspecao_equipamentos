@@ -24,7 +24,7 @@ jobs:
           channel: 'stable'
 
       - name: Install dependencies
-        run: flutter pub get --no-pubspec-override
+        run: flutter pub get
 
       - name: Build APK
         run: flutter build apk --release --android-skip-build-dependency-validation
